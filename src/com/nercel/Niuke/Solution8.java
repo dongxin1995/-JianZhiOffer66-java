@@ -17,7 +17,7 @@ package com.nercel.Niuke;
 
 所以总数是f(n)=f(n-1)+f(n-2)。
  */
-public class Soluton8 {
+public class Solution8 {
     public int JumpFloor(int target) {
 
         if(target==1){
