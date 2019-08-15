@@ -15,16 +15,16 @@ public class Solution36 {
     public ListNode FindFirstCommonNode(ListNode pHead1, ListNode pHead2) {
         ListNode head = pHead1;
         Set<ListNode> res = new HashSet<ListNode>();
-        while (head!=null){
+        while (head != null) {
             res.add(head);
-            head=head.next;
+            head = head.next;
         }
         head = pHead2;
-        while (head!=null){
-            if (res.contains(head)){
+        while (head != null) {
+            if (res.contains(head)) {
                 break;
             }
-            head=head.next;
+            head = head.next;
         }
         return head;
     }

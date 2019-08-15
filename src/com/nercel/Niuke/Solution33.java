@@ -9,10 +9,10 @@ import java.util.ArrayList;
  * 把只包含质因子2、3和5的数称作丑数（Ugly Number）。例如6、8都是丑数，但14不是，因为它包含质因子7。
  * 习惯上我们把1当做是第一个丑数。求按从小到大的顺序的第N个丑数。
  * <p>
- *
+ * <p>
  * 解题思路：选定第一个丑数1，根据丑数的定义，可知以后的丑数必然是在1的基础上乘以2，乘以3，乘以5，因此可以得出三个丑数，
  * 从中选择最小的一个添加到list列表中，之后若list中的丑数与得出的三个丑数中的一个或两个相等，将对应的下标后移，
- *
+ * <p>
  * https://blog.csdn.net/qq_41901915/article/details/90709893
  */
 public class Solution33 {
@@ -45,6 +45,6 @@ public class Solution33 {
                 t5++;
             }
         }
-        return list.get(list.size()-1);
+        return list.get(list.size() - 1);
     }
 }

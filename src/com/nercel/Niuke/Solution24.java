@@ -19,12 +19,12 @@ public class Solution24 {
         if (root == null) {
             return result;
         }
-        target=target-root.val;
+        target = target - root.val;
         //用list来记录路径
         list.add(root.val);
         //判断左右子树是否全为空
         boolean isLeaf = root.left == null && root.right == null;
-        if (target==0&& isLeaf) {
+        if (target == 0 && isLeaf) {
             ArrayList<Integer> path = new ArrayList<Integer>();
             for (int i = 0; i < list.size(); i++) {
                 path.add(list.get(i));
@@ -33,11 +33,11 @@ public class Solution24 {
         }
 
         //递归左节点
-        if (target!=0 && root.left != null) {
+        if (target != 0 && root.left != null) {
             FindPath(root.left, target);
         }
         //递归右节点
-        if (target!=0 && root.right != null) {
+        if (target != 0 && root.right != null) {
             FindPath(root.right, target);
         }
         //每次删除list的最后一个元素，将路径退回来，

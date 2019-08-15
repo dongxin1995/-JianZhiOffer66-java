@@ -12,18 +12,18 @@ package com.nercel.Niuke;
 public class Solution28 {
 
     public int MoreThanHalfNum_Solution(int [] array) {
-        if (array==null||array.length==0){
+        if (array == null || array.length == 0) {
             return 0;
         }
 
-        for (int i =0;i<array.length;i++){
-            int count =0;
-            for (int j=0;j<array.length;j++){
-                if (array[i]==array[j]){
+        for (int i = 0; i < array.length; i++) {
+            int count = 0;
+            for (int j = 0; j < array.length; j++) {
+                if (array[i] == array[j]) {
                     count++;
                 }
             }
-            if (count>(array.length/2)){
+            if (count > (array.length / 2)) {
                 return array[i];
             }
         }
