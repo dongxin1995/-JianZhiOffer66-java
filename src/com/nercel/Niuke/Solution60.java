@@ -28,7 +28,7 @@ import java.util.Queue;
 https://blog.csdn.net/qq_41901915/article/details/90415691
  *
  */
-public class SOlution60 {
+public class Solution60 {
 
     ArrayList<ArrayList<Integer>> Print(TreeNode pRoot) {
         ArrayList<ArrayList<Integer>> result = new ArrayList<ArrayList<Integer>>();
