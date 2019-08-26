@@ -28,7 +28,7 @@ public class Solution23 {
         }
         //将根节点赋值
         int endVal = sequence[end];
-        int curNumber = sequence[start];
+        int curNumber = start;
 
         while (curNumber < end && sequence[curNumber] < endVal) {
             curNumber++;

@@ -33,8 +33,13 @@ public class Solution20 {
 
     public void pop() {
         //出栈时，min栈和data栈均出栈
-        data.pop();
-        min.pop();
+        if (data.peek()!=min.peek()){
+            data.pop();
+        }else {
+            data.pop();
+            min.pop();
+        }
+
     }
 
     public int top() {
